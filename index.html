@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+
+    <title>티사이언티픽 온라인 고객센터</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="container">
+            <div class="logo d-flex flex-column align-items-center">
+                <h1><img class="d-block mx-auto" src="./img/logo.png" alt="TSCIENTIFIC"></h1>
+                <small class="text-uppercase">Online Customer Service Center</small>
+            </div>
+            <div class="welcome d-flex flex-column justify-content-between">
+                <span>빠르고 편리한</span>
+                <img src="img/logo_ko.png" alt="">
+                <span>온라인 고객센터입니다.</span>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="main"><!-- 메인페이지 클래스 main -->
+        <div class="container">
+            <div class="guide">
+                쿠폰정보 조회를 위해<br>
+                휴대폰번호/쿠폰번호를 인증해주세요.
+            </div>
+            <section class="verify">
+                <header>
+                    <span class="bar d-block"></span>
+                    <h4 class="section-title">휴대폰번호/쿠폰번호 인증</h4>
+                </header>
+                <div class="form">
+                    <div class="position-relative">
+                        <label for="mobile-number" class="form-label">휴대폰번호</label>
+                        <input type="number" class="form-control rounded-0 border-0 shadow-none" id="mobile-number" placeholder="- 없이 숫자만 입력해주세요." required>
+                        <button class="btn btn-verify-number rounded-0 p-0 d-flex align-items-center justify-content-center">인증번호 요청</button>
+                    </div>
+                    <div class="position-relative">
+                        <label for="auth-number" class="form-label">인증번호</label>
+                        <input type="number" class="form-control rounded-0 border-0 shadow-none" id="auth-number" placeholder="" required>
+                        <span id="time-limit">02:59</span>
+                    </div>
+                    <div>
+                        <label for="coupon-number" class="form-label">쿠폰번호</label>
+                        <input type="number" class="form-control rounded-0 border-0 shadow-none" id="coupon-number" placeholder="" required>
+                    </div>
+                </div>
+                <div class="agree">
+                    <div class="agree-header">
+                        <label class="d-flex align-items-center">
+                            <input type="checkbox" class="d-none">
+                            <span class="icon"></span>
+                            <div class="text">개인정보 수집 및 이용에 관한 동의</div>
+                        </label>
+                    </div>
+                    <div class="agree-body">
+                        개인정보 수집 및 이용 목적<br>
+                        · 본인인증<br>
+                        · 모바일 쿠폰 상태조회 및 변경<br>
+                        <br>
+                        개인정보 수집 항목<br>
+                        · 휴대폰번호<br>
+                        <br>
+                        개인정보 보유 및 이용기간<br>
+                        · 온라인 고객센터 이용 종료 시 까지<br>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-verify d-flex align-items-center justify-content-center w-100 rounded-0">인증하기</button>
+                    </div>
+                    <!-- 퍼플리싱 확인 용-->
+                </div>
+                <div class="text-center mt-3">
+                    <a href="search.html">조회페이지로 이동</a>
+                </div>
+            </section>
+            <section class="notice">
+                <header>
+                    <span class="bar d-block"></span>
+                    <h4 class="section-title">유의사항</h4>
+                </header>
+                <div class="notice-body">
+                    <ul class="list-unstyled mb-0">
+                        <li>인증하신 휴대폰번호로 발급된 1년 이내의 상품만 조회 가능합니다.</li>
+                        <li>기업 경품 또는 사은품 등의 무상 제공 된 쿠폰번호는 조회가 불가합니다.</li>
+                        <li>기업 경품 또는 사은품 등의 무상 제공 된 쿠폰번호는 연장 및 환불이 불가합니다.</li>
+                        <li>매체에서 구매한 쿠폰 중 일부는 조회가 불가 할 수 있습니다.</li>
+                        <li>잔액 표시는 잔액 관리형 금액권만 노출됩니다.</li>
+                        <li>온라인 전용 쿠폰은 사용여부 조회가 불가합니다.</li>
+                        <li>수신번호 오기재 또는 쿠폰번호 노출 (양도 등) 로 인해 쿠폰을 타인이 사용 시 판매자 및 구매처는 책임지지 않습니다.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <h2><img src="img/logo.png" alt=""></h2>
+            <div class="contact">
+                <ul class="list-unstyled d-flex flex-wrap">
+                    <li>고객센터: <a href="tel:1588-5639">1588-5639</a></li>
+                    <li>메일: <a href="mailto:cs@tscientific.co.kr">cs@tscientific.co.kr</a></li>
+                </ul>
+            </div>
+            <div class="company">
+                <h6>주식회사 티사이언티픽</h6>
+                <address>서울시 동작구 여의대방로62길 1 이투데이빌딩 3층</address>
+                <p>Copyright © 2021 by Tscientific All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+
+</html>

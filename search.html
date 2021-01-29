@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+
+    <title>티사이언티픽 온라인 고객센터</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="container">
+            <div class="logo d-flex flex-column align-items-center mb-0">
+                <h1><img class="d-block mx-auto" src="./img/logo.png" alt="TSCIENTIFIC"></h1>
+                <small class="text-uppercase">Online Customer Service Center</small>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="search"><!-- 쿠폰조회 페이지 클래스 search -->
+        <div class="container">
+            <section>
+                <header>
+                    <span class="bar d-block"></span>
+                    <h4 class="section-title">쿠폰정보 조회</h4>
+                </header>
+                <div class="form">
+                    <div class="position-relative">
+                        <label for="coupon-number" class="form-label">쿠폰번호</label>
+                        <input type="number" class="form-control rounded-0 border-0 shadow-none" id="coupon-number" placeholder="- 없이 숫자만 입력해 주세요." required>
+                        <button type="submit" class="btn btn-search-coupon rounded-0 p-0 d-flex align-items-center justify-content-center">조회</button>
+                    </div>
+                </div>
+            </section>
+            <section class="result">
+                <header>
+                    <span class="bar d-block"></span>
+                    <h4 class="section-title">잔액</h4>
+                </header>
+                <div class="d-flex flex-column align-items-end">
+                    <div class="balance">8,400<small>원</small></div>
+                    <dl class="d-flex flex-wrap justify-content-end">
+                        <dt>상품명</dt>
+                        <dd class="mb-0 text-break">세븐일레븐 10,000원권</dd>
+                    </dl>
+                    <dl class="d-flex flex-wrap justify-content-end">
+                        <dt>미사용 금액</dt>
+                        <dd class="mb-0">4,300원</dd>
+                    </dl>
+                    <dl class="d-flex flex-wrap justify-content-end">
+                        <dt>유효기간</dt>
+                        <dd class="mb-0">2018.08.29 까지</dd>
+                    </dl>
+                </div>
+            </section>
+            <div class="btn-area">
+                <a class="btn btn-goto-main d-flex align-items-center justify-content-center rounded-0 p-0 border-0" href="index.html">메인으로</a>
+            </div>
+            <div class="notice">
+                <ul class="list-unstyled mb-0">
+                    <li>발급된지 1년이 지난 쿠폰은 조회가 불가합니다.</li>
+                    <li>매체에서 구매한 쿠폰 중 일부는 조회가 불가할 수 있습니다.</li>
+                    <li>교환 전 직원에게 쿠폰을 제시해야 사용 가능합니다.</li>
+                    <li>교환 시 부족한 금액은 다른 결제수단(현금,신용카드)을 사용하여 결제 가능합니다.</li>
+                    <li>쿠폰관련 문의 :  티사이언티픽 고객센터 1588-5639</li>
+                    <li>고객센터 운영시간 : 평일 09:00~18:00  (점심시간 12:00~13:00)/주말, 공휴일 휴무</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <h2><img src="img/logo.png" alt=""></h2>
+            <div class="contact">
+                <ul class="list-unstyled d-flex flex-wrap">
+                    <li>고객센터: <a href="tel:1588-5639">1588-5639</a></li>
+                    <li>메일: <a href="mailto:cs@tscientific.co.kr">cs@tscientific.co.kr</a></li>
+                </ul>
+            </div>
+            <div class="company">
+                <h6>주식회사 티사이언티픽</h6>
+                <address>서울시 동작구 여의대방로62길 1 이투데이빌딩 3층</address>
+                <p>Copyright © 2021 by Tscientific All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+
+</html>

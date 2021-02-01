@@ -252,6 +252,10 @@ body {
             small {
                 font-size: calc(80px / 3);
             }
+            &.no-balance {
+                color: rgba(0, 0, 0, 0.1);
+                text-shadow: 1px 1px 0 rgba(#fff, .2), 0 0 0 rgba(#000, .2);
+            }
         }
         dl {
             margin-bottom: calc(30px / 3);
@@ -264,6 +268,9 @@ body {
                 margin-left: calc(25px / 3);
                 font-size: calc(48px / 3);
             }
+        }
+        .no-result {
+            height: calc(400px / 3);
         }
     }
     .btn-goto-main {

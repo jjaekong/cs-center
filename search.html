@@ -43,22 +43,30 @@
             <section class="result">
                 <header>
                     <span class="bar d-block"></span>
-                    <h4 class="section-title">잔액</h4>
+                    <h4 class="section-title">잔액/쿠폰상태</h4>
                 </header>
-                <div class="d-flex flex-column align-items-end">
-                    <div class="balance">8,400<small>원</small></div>
+                <!-- 조회된 쿠폰이 있을 경우 -->
+                <div class="d-flex flex-column align-items-end has-result">
+                    <div class="balance">8,400<small>원</small></div><!-- 잔액이 있을 경우 -->
+                    <div class="balance no-balance">기간만료</div><!-- 기간이 만료 했을 경우 -->
                     <dl class="d-flex flex-wrap justify-content-end">
                         <dt>상품명</dt>
                         <dd class="mb-0 text-break">세븐일레븐 10,000원권</dd>
                     </dl>
                     <dl class="d-flex flex-wrap justify-content-end">
-                        <dt>미사용 금액</dt>
-                        <dd class="mb-0">4,300원</dd>
-                    </dl>
-                    <dl class="d-flex flex-wrap justify-content-end">
                         <dt>유효기간</dt>
                         <dd class="mb-0">2018.08.29 까지</dd>
                     </dl>
+                </div>
+            </section>
+            <section class="result">
+                <header>
+                    <span class="bar d-block"></span>
+                    <h4 class="section-title">잔액/쿠폰상태</h4>
+                </header>
+                <!-- 조회된 쿠폰이 없을 경우 -->
+                <div class="d-flex align-items-center justify-content-center no-result">
+                    조회된 쿠폰이 없습니다.
                 </div>
             </section>
             <div class="btn-area">

@@ -69,6 +69,19 @@ body {
                 font-size: calc(48px / 3);
             }
         }
+        .notice {
+            margin-top: calc(50px / 3);
+            padding: calc(35px / 3);
+            li {
+                display: flex;
+                font-size: calc(32px / 3);
+                line-height: calc(60px / 3);
+                &:before {
+                    margin-right: calc(10px / 3);
+                    content: '·';
+                }
+            }
+        }
     }
 }
 
@@ -175,8 +188,8 @@ body {
             right: 0;
         }
     }
-    .notice {
-        .notice-body {
+    .warning {
+        .warning-body {
             padding: calc(60px / 3) calc(30px / 3);
             background-color: white;
             font-size: calc(36px / 3);
@@ -280,18 +293,49 @@ body {
         font-weight: 800;
         font-size: calc(48px / 3);
     }
-    .notice {
-        margin-top: calc(50px / 3);
-        padding: calc(35px / 3);
-        li {
-            display: flex;
-            font-size: calc(32px / 3);
-            line-height: calc(60px / 3);
-            &:before {
-                margin-right: calc(10px / 3);
-                content: '·';
-            }
+    
+}
+
+main.error {
+    .container {
+        padding: calc(110px / 3) calc(85px / 3);
+    }
+    .error-message {
+        margin-bottom: calc(80px / 3);
+        h1 {
+            font-size: calc(90px / 3);
+            font-weight: 800;
+            line-height: calc(120px / 3);
         }
+        hr {
+            margin-top: calc(70px / 3);
+            margin-bottom: calc(80px / 3);
+            width: calc(45px / 3);
+            border-color: #424242 !important;
+            opacity: 1;
+        }
+        p {
+            font-size: calc(48px / 3);
+            line-height: calc(80px / 3);
+            color: #333;
+        }
+    }
+    .check-time {
+        h6 { 
+            color: #333;
+            font-weight: 800;
+            font-size: calc(48px / 3);
+            line-height: calc(80px / 3);
+        }
+        p {
+            color: #009fe3;
+            font-weight: 800;
+            font-size: calc(48px / 3);
+            line-height: calc(80px / 3);
+        }
+    }
+    .notice {
+        margin-top: calc(600px / 3) !important;
     }
 }
 

@@ -80,6 +80,19 @@ body {
   margin-bottom: calc(70px / 3);
   font-size: calc(48px / 3);
 }
+#main > .container .notice {
+  margin-top: calc(50px / 3);
+  padding: calc(35px / 3);
+}
+#main > .container .notice li {
+  display: flex;
+  font-size: calc(32px / 3);
+  line-height: calc(60px / 3);
+}
+#main > .container .notice li:before {
+  margin-right: calc(10px / 3);
+  content: "·";
+}
 
 #main.main .guide {
   margin-bottom: calc(30px / 3);
@@ -179,7 +192,7 @@ body {
   bottom: calc(45px / 3);
   right: 0;
 }
-#main.main .notice .notice-body {
+#main.main .warning .warning-body {
   padding: calc(60px / 3) calc(30px / 3);
   background-color: white;
   font-size: calc(36px / 3);
@@ -187,10 +200,10 @@ body {
   border-top: 1px solid #d2d2d2;
   border-bottom: 1px solid #d2d2d2;
 }
-#main.main .notice .notice-body li {
+#main.main .warning .warning-body li {
   display: flex;
 }
-#main.main .notice .notice-body li:before {
+#main.main .warning .warning-body li:before {
   content: "-";
   margin-right: calc(30px / 3);
 }
@@ -280,18 +293,44 @@ body {
   font-weight: 800;
   font-size: calc(48px / 3);
 }
-#main.search .notice {
-  margin-top: calc(50px / 3);
-  padding: calc(35px / 3);
+
+main.error .container {
+  padding: calc(110px / 3) calc(85px / 3);
 }
-#main.search .notice li {
-  display: flex;
-  font-size: calc(32px / 3);
-  line-height: calc(60px / 3);
+main.error .error-message {
+  margin-bottom: calc(80px / 3);
 }
-#main.search .notice li:before {
-  margin-right: calc(10px / 3);
-  content: "·";
+main.error .error-message h1 {
+  font-size: calc(90px / 3);
+  font-weight: 800;
+  line-height: calc(120px / 3);
+}
+main.error .error-message hr {
+  margin-top: calc(70px / 3);
+  margin-bottom: calc(80px / 3);
+  width: calc(45px / 3);
+  border-color: #424242 !important;
+  opacity: 1;
+}
+main.error .error-message p {
+  font-size: calc(48px / 3);
+  line-height: calc(80px / 3);
+  color: #333;
+}
+main.error .check-time h6 {
+  color: #333;
+  font-weight: 800;
+  font-size: calc(48px / 3);
+  line-height: calc(80px / 3);
+}
+main.error .check-time p {
+  color: #009fe3;
+  font-weight: 800;
+  font-size: calc(48px / 3);
+  line-height: calc(80px / 3);
+}
+main.error .notice {
+  margin-top: calc(600px / 3) !important;
 }
 
 #footer .container {

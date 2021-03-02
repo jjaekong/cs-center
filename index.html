@@ -32,10 +32,38 @@
 
     <main id="main" class="main"><!-- 메인페이지 클래스 main -->
         <div class="container">
-            <div class="guide">
-                쿠폰정보 조회를 위해<br>
-                휴대폰번호/쿠폰번호를 인증해주세요.
-            </div>
+            <section class="tasks">
+                <header>
+                    <h4 class="section-title">아래에서 원하시는 서비스를 선택 후<br>휴대폰번호/쿠폰번호를 인증해주세요</h4>
+                </header>
+                <div class="task-btns">
+                    <div class="d-flex">
+                        <!-- input에 name은 임의로 넣었습니다. 개발에 맞춰 넣어주세요 -->
+                        <input id="task-1" type="radio" name="abcd" class="visually-hidden" checked>
+                        <label for="task-1">
+                            <span class="icon"></span>
+                            <span class="text">쿠폰정보 조회</span>
+                        </label>
+                        <input id="task-3" type="radio" name="abcd" class="visually-hidden">
+                        <label for="task-3">
+                            <span class="icon"></span>
+                            <span class="text">유효기간 연장</span>
+                        </label>
+                    </div>
+                    <!-- <div class="d-flex">
+                        <input id="task-2" type="radio" name="abcd" class="visually-hidden">
+                        <label for="task-2">
+                            <span class="icon"></span>
+                            <span class="text">쿠폰 재전송</span>
+                        </label>
+                        <input id="task-4" type="radio" name="abcd" class="visually-hidden">
+                        <label for="task-4">
+                            <span class="icon"></span>
+                            <span class="text">환불신청</span>
+                        </label>
+                    </div> -->
+                </div>
+            </section>
             <section class="verify">
                 <header>
                     <span class="bar d-block"></span>
@@ -80,6 +108,9 @@
                         <button type="submit" class="btn btn-verify d-flex align-items-center justify-content-center w-100 rounded-0">인증하기</button>
                     </div>
                     <!-- 퍼플리싱 확인 용-->
+                </div>
+                <div class="mt-2">
+                    <p>※ 휴대폰 번호 인증을 통한 온라인 고객센터 로그인은 30분간 유지됩니다.</p>
                 </div>
                 <div class="text-center mt-3">
                     <a href="search.html">조회페이지로 이동</a>

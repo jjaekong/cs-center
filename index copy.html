@@ -19,7 +19,7 @@
     <header id="header">
         <div class="container">
             <div class="logo d-flex flex-column align-items-center">
-                <h1><a href="/"><img class="d-block mx-auto" src="./img/logo.png" alt="TSCIENTIFIC"></a></h1>
+                <h1><img class="d-block mx-auto" src="./img/logo.png" alt="TSCIENTIFIC"></h1>
                 <small class="text-uppercase">Online Customer Service Center</small>
             </div>
             <div class="welcome d-flex flex-column justify-content-between">
@@ -30,14 +30,7 @@
         </div>
     </header>
 
-    <div id="nav" class="container px-0">
-        <nav class="nav">
-            <a style="flex: 1" class="d-flex justify-content-center align-items-center px-0 nav-link text-center active" href="/search.html">쿠폰 C/S</a>
-            <a style="flex: 1" class="d-flex justify-content-center align-items-center px-0 nav-link text-center" href="/faq.html">자주하는 질문</a>
-        </nav>
-    </div>
-
-    <main id="main" class="search">
+    <main id="main" class="main"><!-- 메인페이지 클래스 main -->
         <div class="container">
             <section class="tasks">
                 <header>
@@ -47,22 +40,22 @@
                     <div class="d-flex">
                         <!-- input에 name은 임의로 넣었습니다. 개발에 맞춰 넣어주세요 -->
                         <input id="task-1" type="radio" name="abcd" class="visually-hidden" checked>
-                        <label for="task-1" class="task task-1">
+                        <label for="task-1">
                             <span class="icon"></span>
                             <span class="text">쿠폰정보 조회</span>
                         </label>
-                        <input id="task-2" type="radio" name="abcd" class="visually-hidden">
-                        <label for="task-2" class="task task-2">
-                            <span class="icon"></span>
-                            <span class="text">쿠폰 재전송</span>
-                        </label>
                         <input id="task-3" type="radio" name="abcd" class="visually-hidden">
-                        <label for="task-3" class="task task-3">
+                        <label for="task-3">
                             <span class="icon"></span>
                             <span class="text">유효기간 연장</span>
                         </label>
                     </div>
                     <!-- <div class="d-flex">
+                        <input id="task-2" type="radio" name="abcd" class="visually-hidden">
+                        <label for="task-2">
+                            <span class="icon"></span>
+                            <span class="text">쿠폰 재전송</span>
+                        </label>
                         <input id="task-4" type="radio" name="abcd" class="visually-hidden">
                         <label for="task-4">
                             <span class="icon"></span>
@@ -77,17 +70,17 @@
                     <h4 class="section-title">휴대폰번호/쿠폰번호 인증</h4>
                 </header>
                 <div class="form">
-                    <div class="mobile position-relative">
+                    <div class="position-relative">
                         <label for="mobile-number" class="form-label">휴대폰번호</label>
                         <input type="number" class="form-control rounded-0 border-0 shadow-none" id="mobile-number" placeholder="- 없이 숫자만 입력해주세요." required>
                         <button class="btn btn-verify-number rounded-0 p-0 d-flex align-items-center justify-content-center">인증번호 요청</button>
                     </div>
-                    <div class="cert-num position-relative">
+                    <div class="position-relative">
                         <label for="auth-number" class="form-label">인증번호</label>
                         <input type="number" class="form-control rounded-0 border-0 shadow-none" id="auth-number" placeholder="" required>
                         <span id="time-limit">02:59</span>
                     </div>
-                    <div class="coupon-num">
+                    <div>
                         <label for="coupon-number" class="form-label">쿠폰번호</label>
                         <input type="number" class="form-control rounded-0 border-0 shadow-none" id="coupon-number" placeholder="" required>
                     </div>
@@ -114,12 +107,13 @@
                     <div>
                         <button type="submit" class="btn btn-verify d-flex align-items-center justify-content-center w-100 rounded-0">인증하기</button>
                     </div>
+                    <!-- 퍼플리싱 확인 용-->
                 </div>
                 <div class="mt-2">
                     <p>※ 휴대폰 번호 인증을 통한 온라인 고객센터 로그인은 30분간 유지됩니다.</p>
                 </div>
                 <div class="text-center mt-3">
-                    <a href="result.html">결과페이지로 이동</a>
+                    <a href="search.html">조회페이지로 이동</a>
                 </div>
             </section>
             <section class="warning">
@@ -160,16 +154,6 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
-    <script>
-        document.querySelectorAll('.tasks .task-btns input[type=radio]').forEach(radio => {
-            radio.addEventListener('click', function() {
-                this.id == 'task-2'
-                    ? document.querySelector('.verify .form .coupon-num').style.display = 'none'
-                    : document.querySelector('.verify .form .coupon-num').style.display = 'block'
-            })
-        })
-    </script>
 </body>
 
 </html>

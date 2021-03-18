@@ -218,38 +218,6 @@ body {
   color: #b7b7b7;
   font-weight: 400;
 }
-#main.main .verify .agree {
-  background-color: white;
-}
-#main.main .verify .agree .agree-header {
-  padding: calc(42px / 3) calc(55px / 3);
-  border-top: 1px solid #d2d2d2;
-  border-bottom: 1px solid #d2d2d2;
-}
-#main.main .verify .agree .agree-header label {
-  margin-bottom: 0;
-}
-#main.main .verify .agree .agree-header label .text {
-  margin-left: calc(30px / 3);
-  font-size: calc(42px / 3);
-  font-weight: 700;
-  line-height: calc(68px / 3);
-}
-#main.main .verify .agree .agree-header label input[type=checkbox] + .icon {
-  width: calc(68px / 3);
-  height: calc(68px / 3);
-  background-image: url(../img/ico_check.gif);
-  background-size: 100% auto;
-  background-position: 50% 0;
-}
-#main.main .verify .agree .agree-header label input[type=checkbox]:checked + .icon {
-  background-position: 50% calc(-68px / 3);
-}
-#main.main .verify .agree .agree-body {
-  padding: calc(50px / 3) calc(100px / 3);
-  font-size: calc(36px / 3);
-  line-height: calc(52px / 3);
-}
 #main.main .verify .btn-verify-number {
   width: calc(266px / 3);
   height: calc(78px / 3);
@@ -276,6 +244,46 @@ body {
   position: absolute;
   bottom: calc(45px / 3);
   right: 0;
+}
+#main.main .agree {
+  margin-bottom: calc(115px / 3);
+  background-color: white;
+}
+#main.main .agree .agree-header {
+  padding: calc(42px / 3) calc(55px / 3);
+  border-top: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+}
+#main.main .agree .agree-header label {
+  margin-bottom: 0;
+}
+#main.main .agree .agree-header label .text {
+  margin-left: calc(30px / 3);
+  font-size: calc(42px / 3);
+  font-weight: 700;
+  line-height: calc(68px / 3);
+}
+#main.main .agree .agree-header label input[type=checkbox] + .icon {
+  width: calc(68px / 3);
+  height: calc(68px / 3);
+  background-image: url(../img/ico_check.gif);
+  background-size: 100% auto;
+  background-position: 50% 0;
+}
+#main.main .agree .agree-header label input[type=checkbox]:checked + .icon {
+  background-position: 50% calc(-68px / 3);
+}
+#main.main .agree .agree-body {
+  padding: calc(50px / 3) calc(100px / 3);
+  font-size: calc(36px / 3);
+  line-height: calc(52px / 3);
+}
+#main.main .agree .btn-agree-info img {
+  width: calc(30px / 3);
+  transform: rotate(180deg);
+}
+#main.main .agree .btn-agree-info.collapsed img {
+  transform: rotate(0deg);
 }
 #main.main .warning .warning-body {
   padding: calc(60px / 3) calc(30px / 3);

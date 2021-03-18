@@ -64,6 +64,29 @@
                     </div> -->
                 </div>
             </section>
+            <div class="agree">
+                <div class="agree-header d-flex justify-content-between">
+                    <label class="d-flex align-items-center">
+                        <input type="checkbox" class="d-none" id="agree-privacy">
+                        <span class="icon"></span>
+                        <div class="text">개인정보 수집 및 이용에 관한 동의</div>
+                    </label>
+                    <button type="button" class="btn btn-link btn-agree-info py-0 px-2 collapsed" data-bs-toggle="collapse" data-bs-target="#agree-info">
+                        <img src="img/ico_caret.svg">
+                    </button>
+                </div>
+                <div class="agree-body collapse" id="agree-info">
+                    개인정보 수집 및 이용 목적<br>
+                    · 본인인증<br>
+                    · 모바일 쿠폰 상태조회 및 변경<br>
+                    <br>
+                    개인정보 수집 항목<br>
+                    · 휴대폰번호<br>
+                    <br>
+                    개인정보 보유 및 이용기간<br>
+                    · 온라인 고객센터 이용 종료 시 까지<br>
+                </div>
+            </div>
             <section class="verify">
                 <header>
                     <span class="bar d-block"></span>
@@ -73,7 +96,7 @@
                     <div class="position-relative">
                         <label for="mobile-number" class="form-label">휴대폰번호</label>
                         <input type="number" class="form-control rounded-0 border-0 shadow-none" id="mobile-number" placeholder="- 없이 숫자만 입력해주세요." required>
-                        <button class="btn btn-verify-number rounded-0 p-0 d-flex align-items-center justify-content-center">인증번호 요청</button>
+                        <button class="btn btn-verify-number rounded-0 p-0 d-flex align-items-center justify-content-center" disabled>인증번호 요청</button>
                     </div>
                     <div class="position-relative">
                         <label for="auth-number" class="form-label">인증번호</label>
@@ -85,33 +108,13 @@
                         <input type="number" class="form-control rounded-0 border-0 shadow-none" id="coupon-number" placeholder="" required>
                     </div>
                 </div>
-                <div class="agree">
-                    <div class="agree-header">
-                        <label class="d-flex align-items-center">
-                            <input type="checkbox" class="d-none">
-                            <span class="icon"></span>
-                            <div class="text">개인정보 수집 및 이용에 관한 동의</div>
-                        </label>
-                    </div>
-                    <div class="agree-body">
-                        개인정보 수집 및 이용 목적<br>
-                        · 본인인증<br>
-                        · 모바일 쿠폰 상태조회 및 변경<br>
-                        <br>
-                        개인정보 수집 항목<br>
-                        · 휴대폰번호<br>
-                        <br>
-                        개인정보 보유 및 이용기간<br>
-                        · 온라인 고객센터 이용 종료 시 까지<br>
-                    </div>
-                    <div>
-                        <button type="submit" class="btn btn-verify d-flex align-items-center justify-content-center w-100 rounded-0">인증하기</button>
-                    </div>
-                    <!-- 퍼플리싱 확인 용-->
-                </div>
                 <div class="mt-2">
                     <p>※ 휴대폰 번호 인증을 통한 온라인 고객센터 로그인은 30분간 유지됩니다.</p>
                 </div>
+                <div>
+                    <button type="submit" class="btn btn-verify d-flex align-items-center justify-content-center w-100 rounded-0">인증하기</button>
+                </div>
+                <!-- 퍼플리싱 확인 용-->
                 <div class="text-center mt-3">
                     <a href="search.html">조회페이지로 이동</a>
                 </div>
@@ -155,6 +158,13 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <script>
+        document.getElementById('agree-privacy').addEventListener('click', () => {
+            const btnReqVarify = document.querySelector('.btn-verify-number')
+            btnReqVarify.disabled = !document.getElementById('agree-privacy').checked
+        })
+    </script>
 </body>
 
 </html>

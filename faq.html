@@ -150,10 +150,17 @@
         document.querySelectorAll('.faq-nav li a').forEach(elem => {
             elem.addEventListener('click', function(e) {
                 e.preventDefault()
+                // 탭 active 처리
                 document.querySelectorAll('.faq-nav li').forEach(item => {
                     item.classList.remove('active')
                 })
                 this.parentElement.classList.add('active')
+
+                // 탭 컨텐츠 첫번째 열리고 나머지 닫히도록 처리
+                const firstFaqItem = document.querySelector('.faq-list .accordion-item:first-child')
+                if (!firstFaqItem.querySelector('.accordion-header .accordion-button:not(.collapsed)')) {
+                    firstFaqItem.querySelector('.accordion-header .accordion-button').click()
+                }
             })
         })
     </script>

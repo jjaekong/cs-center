@@ -162,6 +162,33 @@ body {
                 box-shadow: 0px calc(5px / 3) 0px 0px rgba(0, 0, 0, 0.06);
                 > div {
                     height: calc(240px / 3);
+                    & + div {
+                        border-top: 1px solid #d2d2d2;
+                        // &:first-of-type {
+                        //     border-top-left-radius: calc(20px / 3);
+                        //     border-bottom-left-radius: calc(20px / 3);
+                        // }
+                        // &:last-of-type {
+                        //     border-top-right-radius: calc(20px / 3);
+                        //     border-bottom-right-radius: calc(20px / 3);
+                        // }
+                    }
+                    &:nth-of-type(1) {
+                        .task:nth-of-type(1) {
+                            border-top-left-radius: calc(20px / 3);
+                        }
+                        .task:nth-of-type(2) {
+                            border-top-right-radius: calc(20px / 3);
+                        }
+                    }
+                    &:nth-of-type(2) {
+                        .task:nth-of-type(1) {
+                            border-bottom-left-radius: calc(20px / 3);
+                        }
+                        .task:nth-of-type(2) {
+                            border-bottom-right-radius: calc(20px / 3);
+                        }
+                    }
                     .task {
                         flex: 1;
                         display: flex;
@@ -174,14 +201,6 @@ body {
                         font-size: calc(42px / 3);
                         line-height: calc(70px / 3);
                         text-decoration: none;
-                        &:first-of-type {
-                            border-top-left-radius: calc(20px / 3);
-                            border-bottom-left-radius: calc(20px / 3);
-                        }
-                        &:last-of-type {
-                            border-top-right-radius: calc(20px / 3);
-                            border-bottom-right-radius: calc(20px / 3);
-                        }
                         & ~ .task {
                             border-left: 1px solid #d2d2d2;
                         }
@@ -563,6 +582,11 @@ body {
     }
 }
 
+<<<<<<< Updated upstream
+=======
+#main.result {}
+
+>>>>>>> Stashed changes
 #main.error {
     .container {
         padding: calc(110px / 3) calc(85px / 3);
@@ -687,6 +711,127 @@ body {
                     color: #333;
                     border: 1px solid #000;
                 }
+            }
+        }
+    }
+}
+
+#main.refund {
+    .container {
+        padding-top: calc(50px / 3);
+    }
+    .details {
+        margin-bottom: calc(100px / 3);
+        dl {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid white;
+            border-bottom: 1px solid #d2d2d2;
+            margin-bottom: 0;
+            min-height: calc(150px / 3);
+        }
+        dt {
+            padding-left: calc(27px / 3);
+            padding-right: calc(27px / 3);
+            padding-top: calc(30px / 3);
+            padding-bottom: calc(30px / 3);
+            font-size: calc(32px / 3);
+            color: #827878;
+            flex: 0 0 calc(210px / 3);
+        }
+        dd {
+            margin-bottom: 0;
+            margin-left: auto;
+            padding-left: calc(42px / 3);
+            padding-right: calc(42px / 3);
+            padding-top: calc(30px / 3);
+            padding-bottom: calc(30px / 3);
+        }
+        .product-name {
+            dd {
+                font-size: calc(42px / 3);
+                color: #333;
+            }
+        }
+        .refund-price {
+            dd {
+                font-size: calc(60px / 3);
+                color: #2c2e87;
+                font-weight: bolder;
+                span {
+                    font-size: calc(42px / 3);
+                }
+            }
+        }
+        .details-body {
+            border-bottom: 1px solid white;
+            border-top: 1px solid #d2d2d2;
+        }
+    }
+    .account {
+        .form {
+            margin-bottom: calc(50px / 3);
+            border: 1px solid #d2d2d2;
+            box-shadow: 0px calc(5px / 3) 0px 0px rgba(0, 0, 0, 0.06);
+            border-radius: calc(15px / 3);
+            background-color: #fff;
+            padding: calc(40px / 3) calc(70px / 3);
+            > div {
+                & + div {
+                    margin-top: calc(100px / 3);
+                }
+            }
+            .form-label {
+                color: #827878;
+                font-size: calc(32px / 3);
+                margin-bottom: calc(10px / 3);
+            }
+            .form-control {
+                border-bottom: 1px solid #d2d2d2 !important;
+                font-size: calc(42px / 3);
+                font-weight: 800;
+                height: calc(120px / 3);
+                padding-left: calc(6px / 3);
+                padding-right: calc(6px / 3);
+                &::placeholder {
+                    color: #b7b7b7;
+                    font-weight: 400;
+                }
+            }
+            .btn-confirm-account {
+                width: calc(220px / 3);
+                height: calc(78px / 3);
+                border: 1px solid #333333;
+                font-size: calc(36px / 3);
+                color: #333;
+                font-weight: 800;
+                position:  absolute;
+                bottom: calc(24px / 3);
+                right: 0;
+                background-color: white;
+            }
+            #bank {
+                background-image: url(../img/ico_caret.svg);
+                background-size: calc(30px / 3) calc(15px / 3);
+                background-repeat: no-repeat;
+                background-position: calc(100% - 6px) 50%;
+            }
+        }
+        .btn-area {
+            display: flex;
+            .btn {
+                flex: 1 1 50%;
+                border-radius: 0;
+                height: calc(144px / 3);
+                font-weight: bold;
+                font-size: calc(48px / 3);
+                color: #fff;
+            }
+            .btn-cancel {
+                background-color: #333;
+            }
+            .btn-request {
+                background-color: #009fe3;
             }
         }
     }

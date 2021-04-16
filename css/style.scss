@@ -582,11 +582,8 @@ body {
     }
 }
 
-<<<<<<< Updated upstream
-=======
 #main.result {}
 
->>>>>>> Stashed changes
 #main.error {
     .container {
         padding: calc(110px / 3) calc(85px / 3);
@@ -665,6 +662,11 @@ body {
             }
             address {
                 margin: 0;
+            }
+        }
+        .policy {
+            a {
+                color: rgb(142, 180, 227);
             }
         }
     }

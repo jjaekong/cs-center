@@ -600,6 +600,9 @@ body {
 #footer .container .company address {
   margin: 0;
 }
+#footer .container .policy a {
+  color: #8eb4e3;
+}
 
 #main.faq .container {
   padding-top: calc(75px / 3);

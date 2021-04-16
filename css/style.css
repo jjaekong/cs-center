@@ -602,6 +602,8 @@ body {
 }
 #footer .container .policy a {
   color: #8eb4e3;
+  font-size: 13px;
+  font-weight: 900;
 }
 
 #main.faq .container {

@@ -560,6 +560,24 @@ body {
                     line-height: 1.4;
                 }
             }
+            &.cannot {
+                padding: calc(80px / 3) calc(70px / 3);
+                box-shadow: 0px calc(5px / 3) 0px 0px rgba(0, 0, 0, 0.06);
+                // height: calc(590px / 3);
+                .section-title {
+                    line-height: 1.4;
+                }
+                header {
+                    margin-bottom: 0;
+                }
+                ul, p {
+                    font-size: calc(36px / 3);
+                    a {
+                        color: #333;
+                        text-decoration: none;
+                    }
+                }
+            }
         }
         .more {
             text-align: center;

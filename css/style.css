@@ -511,6 +511,23 @@ body {
 #main.search .result .coupon.none .section-title {
   line-height: 1.4;
 }
+#main.search .result .coupon.cannot {
+  padding: calc(80px / 3) calc(70px / 3);
+  box-shadow: 0px calc(5px / 3) 0px 0px rgba(0, 0, 0, 0.06);
+}
+#main.search .result .coupon.cannot .section-title {
+  line-height: 1.4;
+}
+#main.search .result .coupon.cannot header {
+  margin-bottom: 0;
+}
+#main.search .result .coupon.cannot ul, #main.search .result .coupon.cannot p {
+  font-size: calc(36px / 3);
+}
+#main.search .result .coupon.cannot ul a, #main.search .result .coupon.cannot p a {
+  color: #333;
+  text-decoration: none;
+}
 #main.search .result .more {
   text-align: center;
 }
